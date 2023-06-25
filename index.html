@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sakha</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <style></style>
+  </head>
+
+  <body>
+    <nav>
+      <div class="brand">
+        <h1>SAKHA</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <button class="button"><a href="login.html">Login</a></button>
+        <button class="button"><a href="signup.html">Sign Up</a></button>
+      </div>
+    </nav>
+
+    <section>
+      <div class="heading">
+        <h1>Who we are?</h1>
+        <p>
+          Sakha Global has been transforming ideas into solutions through
+          technology consulting &amp; software development since 2005. With a
+          presence in the USA &amp; India and a global team of 250+ resources,
+          we are a recognized solution specialist in product development with
+          100+ products worldwide in the areas of Mobile (Android &amp; iOS),
+          Big Data, Machine Learning, Blockchain, AR / VR, IoT & BPM / Workflow
+          solutions. We are ISO 9001:2015 certified. Since 2005, we have
+          tech-enabled solo entrepreneurs &amp; startup teams, growth firms,
+          Fortune 500 corporations as well as NGOs &amp; Governments to
+          successfully pursue their endeavors.
+        </p>
+      </div>
+    </section>
+    <section>
+      <div class="services">
+        <h3>We provide</h3>
+        <a href="download.jpeg" alt="sakha logo" title="sakha logo">
+          <img
+            class="img"
+            src="download.jpeg"
+            height="200px"
+            width="400px"
+            style="float: right"
+          />
+        </a>
+        <ol>
+          <li>18+ years of experience</li>
+          <li>250+ experts in technology</li>
+          <li>100+ products developed</li>
+          <li>Product development</li>
+          <li>Big data analyst</li>
+          <li>Machine learning</li>
+          <li>Internet of things</li>
+          <li>Mobile</li>
+          <li>Virtual reality</li>
+        </ol>
+        <h3>User Satisfaction Guaranteed</h3>
+      </div>
+    </section>
+    <section>
+      <div class="selection-div">
+        <form action="success.html" target="_blank" onsubmit="showAlert(event)">
+          <label for="services">Choose a service</label>
+          <select id="services" name="services">
+            <option value="dev">Product development</option>
+            <option value="anaylyst">Big Data analyst</option>
+            <option value="ml">Machine learning</option>
+            <option value="iot">Internet of things</option></select
+          ><br />
+          <input type="submit" />
+        </form>
+      </div>
+
+      <script>
+        function showAlert(event) {
+          event.preventDefault(); // Prevent form submission
+          alert("Thank You!"); // Show alert
+        }
+      </script>
+    </section>
+    <section class="board-members">
+      <h2>Board of Members</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Position</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Kumar Keshawmurthy</td>
+            <td>Founder &amp; Director</td>
+          </tr>
+          <tr>
+            <td>Ananda Kallugadde</td>
+            <td>Director</td>
+          </tr>
+          <tr>
+            <td>Giridhar Nagaraja</td>
+            <td>Founder &amp; Director</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2023 SAKHA. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
