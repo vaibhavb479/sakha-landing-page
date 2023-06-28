@@ -1,7 +1,8 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-//Navigation CSS
+
+/* Navigation CSS */
 nav {
   height: 50px;
 }
@@ -54,6 +55,7 @@ nav ul li a:hover {
   padding: 3rem;
   border-radius: 1rem;
 }
+
 .img {
   border-radius: 1rem;
 }
@@ -63,6 +65,7 @@ nav ul li a:hover {
   flex-direction: column;
   margin: 4rem;
 }
+
 form {
   display: flex;
   flex-direction: column;
@@ -155,4 +158,90 @@ input[type="submit"]:hover {
 
 .button:hover {
   background-color: #bface2;
+}
+
+/* Additional CSS styles */
+
+/* Combining selectors */
+nav,
+.brand {
+  height: 50px;
+}
+
+/* Using comma to apply same style for 2 different elements */
+nav ul li,
+.nav ul li a {
+  display: inline-block;
+}
+
+/* Child selector (>) */
+.selection-div > form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Ancestor selector - giving space between 2 selectors */
+.nav ul,
+.nav ul li {
+  margin-left: 20rem;
+  margin-right: 2rem;
+}
+
+/* Chaining selectors - no space between the selectors */
+.services.img {
+  border-radius: 1rem;
+}
+
+/* Combination of any selectors (e.g., ancestor and chaining) */
+
+/* Positioning */
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.position-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+/* z-index */
+.z-index {
+  z-index: 999;
+}
+
+/* Display property */
+.display-inline {
+  display: inline;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-inline-block {
+  display: inline-block;
+}
+
+/* Flexbox */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-item {
+  flex: 1;
+}
+
+/* Grid system */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
 }
